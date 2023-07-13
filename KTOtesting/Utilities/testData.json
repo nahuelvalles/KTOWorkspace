@@ -1,0 +1,9 @@
+﻿{
+  "validEmail": "nahuel@gmail.com",
+  "validPassword": "P@ss12345",
+  "invalidEmail": "nahuel@nothing.d",
+  "invalidPassword": ".p",
+  "validAnswer": "El Proceso",
+  "invalidAnswer": "null",
+  "question" :  "Your favorite book?"
+}
