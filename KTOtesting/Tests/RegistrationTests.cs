@@ -56,7 +56,7 @@ namespace KTOtesting.Tests
         public static IEnumerable<TestCaseData> AddTestDataConfig()
         {
             yield return new TestCaseData(getDataParser().extractData("validEmail"), getDataParser().extractData("validPassword"), getDataParser().extractData("validRepPass"), getDataParser().extractData("optionText"), getDataParser().extractData("validAnswer"));
-            //yield return new TestCaseData(getDataParser().extractData("invalidEmail"), getDataParser().extractData("validPassword"), getDataParser().extractData("invalidRepPass"), getDataParser().extractData("optionText"), getDataParser().extractData("validAnswer"));
+            yield return new TestCaseData(getDataParser().extractData("invalidEmail"), getDataParser().extractData("validPassword"), getDataParser().extractData("invalidRepPass"), getDataParser().extractData("optionText"), getDataParser().extractData("validAnswer"));
 
         }
     }
