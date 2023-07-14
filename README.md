@@ -1,6 +1,7 @@
 # KTOWorkspace
 Scenario Mapping:
 Login Page:
+
 ⦁	Try to login with a valid username and valid password
 ⦁	Try to login leaving username blank and valid password
 ⦁	Try to login leaving password blank and valid username
@@ -28,6 +29,7 @@ Login Page:
 ⦁	Verify the logout after login in succesfully
 
 Registration Page:
+
 ⦁	Try to register an account with valid email, valid password and valid security answer
 ⦁	Try to register an account without entering an email
 ⦁	Try to register an account without entering a password
@@ -36,7 +38,7 @@ Registration Page:
 ⦁	Try to register an account with a password that doesn't meet the minimum security requirements
 ⦁	Try to register an account without selecting a security question
 ⦁	Try to register an account without entering a security answer
-⦁	Try to register an account selecting one of the questions that asks for a date and entering no date in the answer (this has to be based on the Acceptance Criteria of the funcionality: does the client wants the user is forced to put a date? if so, which format? if the answer has to be in the specified format we should try to enter answer in different formats, etc...)
+⦁	Try to register an account selecting one of the questions that asks for a date and entering no date in the answer (this has to be based on 	the Acceptance Criteria of the funcionality: does the client wants the user is forced to put a date? if so, which format? if the answer has 	to be in the specified format we should try to enter answer in different formats, etc...)
 ⦁	Try to register account without entering a security answer
 ⦁	Try to register an account with invalid email
 ⦁	Try range limits with the security answer
@@ -49,15 +51,21 @@ Registration Page:
 
 Commands to run TCs:
 To place in the actual project:
+	cd KTOWorkspace
 	cd KTOtesting
+ 
 To run all TCs present in the project:
-	dotnet test KTOtesting.csproj 
+	dotnet test KTOtesting.csproj
+ 
 To run TCs by Categories:
 	dotnet test KTOtesting.csproj --filter TestCategory=ValidLogin
 	dotnet test KTOtesting.csproj --filter TestCategory=InvalidLogin
 	dotnet test KTOtesting.csproj --filter TestCategory=Register
+ 
 Categories:
 ⦁	ValidLogin - Test Case that enter valid credentials into the login page, clicks submit and verified that it takes you to the home page.
-⦁	InvalidLogin - Test Case that enters invalid credentials into the login page, clicks submit and checks that an error message is appears due to the invalid credentials.
+⦁	InvalidLogin - Test Case that enters invalid credentials into the login page, clicks submit and checks that an error message is appears due 	to the invalid credentials.
 ⦁	Register - Test Case that enters valid and invalid credentials to the registration page as well as selects security questions and answers.
 All the values of the data can be modified within the testData.json file in "Utilities". There you also have App.config in where simply changing the value of the key you can make the Test Cases runs either in Chrome or Firefox
+
+
