@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace KTOtesting.Tests
 {
-    public class LoginTests : Base
+    public class LoginTests : LoginBase
     {
         [Test,Category("InvalidLogin"), TestCaseSource("AddTestDataConfig")]
         public void LoginInvalidCredentials(String email, String password)
@@ -38,6 +38,7 @@ namespace KTOtesting.Tests
         [Test,Category("ValidLogin"), TestCaseSource("ValidDataConfig")]
         public void LoginValidCredentials(String email, String password)
         {
+            HomePage homePage = new HomePage(getDriver());
             LoginPage loginPage = new LoginPage(getDriver());
 
             //Thread sleep to let alert appears
@@ -51,7 +52,7 @@ namespace KTOtesting.Tests
             loginPage.getLoginButton().Click();
             Thread.Sleep(3000);
 
-            HomePage homePage = new HomePage(getDriver());
+            
             bool isDisplayed = homePage.getAllProductsText().Displayed;
 
             Assert.IsTrue(isDisplayed);

@@ -21,6 +21,17 @@ namespace KTOtesting.PageObjects
 
         //Using Page Object Factory
 
+
+
+        //Dismiss button from the alert
+        [FindsBy(How = How.CssSelector, Using = "button[aria-label='Close Welcome Banner']")]
+        private IWebElement dismissButton;
+
+        public IWebElement getDismissButton()
+        {
+            return dismissButton;
+        }
+
         //emailControl text field
         [FindsBy(How = How.Id, Using = "emailControl")]
         private IWebElement emailControl;
@@ -45,11 +56,11 @@ namespace KTOtesting.PageObjects
 
         public IWebElement getRepeatPassword()
         {
-            return passwordControl;
+            return repeatPasswordControl;
         }
 
         //Security Question Dropdown
-        [FindsBy(How = How.XPath, Using = "//span[contains(@class, \"mat-select-placeholder\")]")]
+        [FindsBy(How = How.Id, Using = "mat-select-0")]
         private IWebElement securityQuestion;
 
         public IWebElement getSecurityQuestion()

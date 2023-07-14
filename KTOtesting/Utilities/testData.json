@@ -1,9 +1,11 @@
 ﻿{
-  "validEmail": "asd@asd.com",
-  "validPassword": "P@ss12345.",
+  "validEmail": "asvsd@asdc.com",
+  "validPassword": "P@ss12346.",
   "invalidEmail": "nahu",
   "invalidPassword": ".p",
   "validAnswer": "El Proceso",
   "invalidAnswer": " ",
-  "question" :  "Your favorite book?"
+  "optionText": "Your favorite book?",
+  "validRepPass": "P@ss12346.",
+  "invalidRepPass": "dfg"
 }

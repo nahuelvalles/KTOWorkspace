@@ -13,7 +13,7 @@ using System.Diagnostics.Contracts;
 
 namespace KTOtesting.Utilities
 {
-    public class Base
+    public class LoginBase
     {
        
         public IWebDriver driver;

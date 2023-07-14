@@ -20,6 +20,14 @@ namespace KTOtesting.PageObjects
 
         //Using Page Object Factory
 
+        [FindsBy(How = How.CssSelector , Using = "h1._ngcontent-lfh-c48")]
+        private IWebElement loginTitle;
+
+        public IWebElement getLoginTitle()
+        {
+            return loginTitle;
+        }
+
         //Dismiss button from the alert
         [FindsBy(How = How.XPath, Using = "//button[@aria-label='Close Welcome Banner']")]
         private IWebElement dismissButton;
