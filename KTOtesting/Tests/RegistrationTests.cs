@@ -17,7 +17,7 @@ namespace KTOtesting.Tests
             newUrl = "https://juice-shop.herokuapp.com/#/register";
         }
 
-        [Test, TestCaseSource(nameof(AddTestDataConfig))]
+        [Test, Category("Register"), TestCaseSource(nameof(AddTestDataConfig))]
         public void RegistrationAction(String email, String password, String repPass, String question, string Answer)
         {
             //Initialize driver and all locators from RegistrationPage class
