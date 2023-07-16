@@ -71,7 +71,10 @@ Categories:
 Other info:
 All the values of the data can be modified within the testData.json file in "Utilities". There you also have App.config in where simply changing the value of the key you can make the Test Cases runs either in Chrome or Firefox
 
+I did make sure that I made an exhaustive list of possible scenarios to test, of course the list could increase or decrease based on acceptance criteria. As you can see I did not automate all the scenarios I could think of, I thought that whit the ones I did automate, it would provide a solid foundation to demonstrate what I know and my understanding of the testing process.
+
 If some of the Test Cases doesn't work as expected please try to put new values to the data within the JSON that contains the data.
 Thanks!
 
+-Nahuel
 
